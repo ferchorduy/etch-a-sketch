@@ -21,14 +21,19 @@ function changeGridLength(lengthValue) {
     grid.appendChild(gridPiece);
   
   }
+
+  colorInGrid();
+  
 }
 
-// const gridPieces = document.getElementsByClassName('grid-piece');
-// Array.from(gridPieces).forEach( (gridPiece) => {
-//   gridPiece.addEventListener('mouseenter', () => {
-//     gridPiece.classList.add('colored');
-//   });
-// });
+function colorInGrid() {
+  const gridPieces = document.getElementsByClassName('grid-piece');
+  Array.from(gridPieces).forEach( (gridPiece) => {
+    gridPiece.addEventListener('mouseover', () => {
+      gridPiece.classList.add('colored');
+    });
+  });
+};
 
 const squareInput = document.createElement('input');
 const colorChoice = document.createElement('div');
@@ -60,7 +65,6 @@ squareInput.addEventListener('keydown', (e) => {
   if (e.code === 'Enter') {
     if (squareInput.value > 0 && squareInput.value <= 64) {
       squareInputValue = squareInput.value;
-      console.log(squareInputValue);
       changeGridLength(squareInputValue);
     }
     else {
