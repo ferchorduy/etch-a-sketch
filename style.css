@@ -98,3 +98,15 @@ input::-webkit-inner-spin-button {
 input:invalid {
   border: red solid 3px;
 }
+
+.rainbow-color:hover {
+  color:rgb(225, 75, 225);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.grey-shades-color:hover {
+  color:rgb(114, 114, 114);
+  transform: scale(1.05);
+  cursor: pointer;
+}

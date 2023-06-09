@@ -67,9 +67,10 @@ squareInput.addEventListener('keydown', (e) => {
       squareInputValue = squareInput.value;
       changeGridLength(squareInputValue);
     }
-    else {
-      console.log('wrong');
-    }
   } return;
 
 });
+
+function colorInGray() {
+  
+}
