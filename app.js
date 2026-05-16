@@ -72,5 +72,11 @@ squareInput.addEventListener('keydown', (e) => {
 });
 
 function colorInGray() {
-  
+  const gridPieces = document.getElementsByClassName('grid-piece');
+  Array.from(gridPieces).forEach( (gridPiece) => {
+    gridPiece.addEventListener('mouseover', () => {
+    });
+  });
 }
+
+greyShadesColor.addEventListener('click', colorInGray);

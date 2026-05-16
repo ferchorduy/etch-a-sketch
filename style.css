@@ -40,7 +40,11 @@ body {
 }
 
 .colored {
-  background-color: black;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.white {
+  background-color: hsl(0, 0%, 0%);
 }
 
 .input-x {
